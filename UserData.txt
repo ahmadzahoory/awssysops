@@ -7,5 +7,5 @@ systemctl enable httpd.service
 systemctl start  httpd.service
 
 # Download App files
-wget https://us-west-2-tcprod.s3.amazonaws.com/courses/ILT-TF-100-SYSOPS/v3.2.0/lab-2-ec2-linux/scripts/dashboard-app.zip
+wget https://raw.githubusercontent.com/ahmadzahoory/awssysops/master/dashboard-app.zip
 unzip dashboard-app.zip -d /var/www/html/
