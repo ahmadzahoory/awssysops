@@ -11,9 +11,9 @@ install-windowsfeature web-mgmt-tools
 Set-Location -Path C:\inetpub\wwwroot
 
 $shell_app = new-object -com shell.application
-(New-Object System.Net.WebClient).DownloadFile("https://raw.githubusercontent.com/ahmadzahoory/awssysops/master/dashboard-app.zip", (Get-Location).Path + "\dashboard-app.zip")
+(New-Object System.Net.WebClient).DownloadFile("https://raw.githubusercontent.com/ahmadzahoory/awssysops/master/lab-01-code.zip", (Get-Location).Path + "\lab-01-code.zip")
 
-$zipfile = $shell_app.Namespace((Get-Location).Path + "\dashboard-app.zip")
+$zipfile = $shell_app.Namespace((Get-Location).Path + "\lab-01-code.zip")
 $destination = $shell_app.Namespace((Get-Location).Path)
 $destination.copyHere($zipfile.items())
 
