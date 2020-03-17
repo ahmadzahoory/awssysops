@@ -7,5 +7,5 @@ systemctl enable httpd.service
 systemctl start  httpd.service
 
 # Download App files
-wget https://raw.githubusercontent.com/ahmadzahoory/awssysops/master/dashboard-app.zip
-unzip dashboard-app.zip -d /var/www/html/
+wget https://raw.githubusercontent.com/ahmadzahoory/awssysops/master/lab-01-code.zip
+unzip lab-01-code.zip -d /var/www/html/
