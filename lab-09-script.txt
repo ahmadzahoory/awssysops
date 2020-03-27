@@ -1,0 +1,8 @@
+#!/bin/bash
+yum update -y --security
+yum -y install httpd php stress
+chkconfig httpd on
+/etc/init.d/httpd start
+cd /var/www/html
+wget https://raw.githubusercontent.com/ahmadzahoory/awssysops/master/lab-09-code.zip
+unzip lab-09-code.zip
