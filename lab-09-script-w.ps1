@@ -1,5 +1,4 @@
 # Set execution policy
-Set-ExecutionPolicy Unrestricted -Force
 New-Item -ItemType directory -Path 'C:\temp'
 
 # Install IIS and Web Management Tools.
