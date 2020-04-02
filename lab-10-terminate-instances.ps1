@@ -1,5 +1,5 @@
 param (
-[string] $region = "us-west-2",
+[string] $region = "us-east-1",
 [string] $subnetid
 )
 
